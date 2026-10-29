@@ -1,0 +1,48 @@
+# Environments and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Testing and Type checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Storage, Uploads and Local Data (Strict LGPD & Security)
+volumes/
+data/
+uploads/
+*.pdf
+*.docx
+*.doc
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Frontend
+frontend/.next/
+frontend/out/
+frontend/node_modules/
