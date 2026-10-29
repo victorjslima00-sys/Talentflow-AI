@@ -8,7 +8,9 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 
+from src.api.v1.auth import router as auth_router
 from src.api.v1.health import router as health_router
+from src.api.v1.tenants import router as tenants_router
 from src.core.config import settings
 from src.core.logging import correlation_id_ctx, setup_logging
 
@@ -59,6 +61,8 @@ app.add_middleware(
 
 app.add_middleware(CorrelationIDMiddleware)
 
-# Register health check routes
+# Register routes
 app.include_router(health_router)
 app.include_router(health_router, prefix="/api/v1")
+app.include_router(auth_router, prefix="/api/v1")
+app.include_router(tenants_router, prefix="/api/v1")

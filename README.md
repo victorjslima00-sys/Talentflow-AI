@@ -25,6 +25,22 @@ O **TalentFlow AI** é um sistema completo de gestão e triagem de candidatos (A
 
 ---
 
+## 🗺️ Status do Roadmap de Desenvolvimento
+
+O projeto é desenvolvido através de fatias verticais com portões rigorosos de qualidade e conformidade:
+
+| Fase | Foco Técnico | Status |
+|:---|:---|:---:|
+| **Fase 0** | Fundação, Governança, CI/CD, Dockerfile, Healthcheck API | 🟢 Concluído |
+| **Fase 1** | Autenticação (Argon2id + JWT HttpOnly), Tenants e Testes de Isolamento | 🟡 Em Andamento |
+| **Fase 2** | Gestão de Vagas e Estruturação por IA | ⚪ Planejado |
+| **Fase 3** | Candidatura Pública e Upload de PDF com Validação Mágica | ⚪ Planejado |
+| **Fase 4** | Workers Assíncronos (Celery + Redis) e Avaliação de Aderência por IA | ⚪ Planejado |
+| **Fase 5** | Dashboard do Recrutador (Kanban) e Portal do Titular (LGPD) | ⚪ Planejado |
+| **Fase 6** | Hardening Final, Teste de Viés Contrafactual no CI e Demonstração | ⚪ Planejado |
+
+---
+
 ## 🏗️ Arquitetura de Alto Nível
 
 ```mermaid
